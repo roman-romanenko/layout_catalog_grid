@@ -1,0 +1,3 @@
+@mixin columns ($catalog-columns) {
+  grid-template-columns: repeat($catalog-columns, 200px);
+}
