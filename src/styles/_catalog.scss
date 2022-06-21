@@ -4,15 +4,15 @@
   gap: 48px;
   justify-content: center;
 
-  @media (min-width: 488px) {
+  @media (min-width:$small-screen) {
     @include columns(2);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width:$medium-screen) {
     @include columns(3);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width:$large-screen) {
     @include columns(4);
   }
 
@@ -20,7 +20,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: $card-width;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
